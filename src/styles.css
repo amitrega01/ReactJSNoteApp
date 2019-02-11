@@ -1,0 +1,69 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,800");
+.App {
+  font-family: "Open Sans";
+  text-align: center;
+}
+.header {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+  padding-bottom: 16px;
+}
+.date {
+  font-size: 10px;
+  color: rgba(0, 0, 0, 0.5);
+}
+.form {
+  display: flex;
+  flex-direction: row;
+  flex-shrink: initial;
+  flex-wrap: wrap;
+}
+.input {
+  flex: 4;
+  border: none;
+  font-weight: 800;
+  font-size: 24px;
+  padding: 16px;
+  font-family: "Open Sans";
+}
+.button {
+  flex: 1;
+  height: 48px;
+  align-self: center;
+  background: #254aff;
+  border-radius: 30px;
+  box-shadow: 0px 2px 4px rgba(37, 74, 255, 0.5);
+  border: none;
+  padding: 8px;
+  color: white;
+  font-weight: 800;
+
+  min-width: 120px;
+  font-family: "Open Sans";
+}
+.deleteBtn {
+  flex: 1;
+  width: auto;
+  height: auto;
+  float: right;
+  align-self: center;
+  background: none;
+  border: none;
+  color: red;
+  font-weight: 800;
+
+  font-family: "Open Sans";
+}
+.list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+.listItem {
+  font-family: "Open Sans";
+  margin: 10px;
+  border-radius: 4px;
+  padding: 8px;
+  box-shadow: 0px 2px 16px rgba(52, 97, 129, 0.25);
+  text-align: left;
+  max-width: inherit;
+}

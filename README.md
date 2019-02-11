@@ -1,2 +1,0 @@
-# ReactJSNoteApp
-Created with CodeSandbox
