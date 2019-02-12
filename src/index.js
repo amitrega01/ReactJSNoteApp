@@ -1,51 +1,13 @@
 import React from "react";
-import ReactDOM from "react-dom";
-import AddNote from "./AddNote";
-import "./styles.css";
-
-export default class App extends React.Component {
-  state = {
-    title: "Notes",
-    data: []
-  };
-  addNote = value => {
-    this.setState({
-      data: [
-        ...this.state.data,
-        { text: value.text, date: value.date, id: this.state.data.length }
-      ]
-    });
-  };
-
-  render() {
-    const listItems = this.state.data.map(item => (
-      <li className="listItem">
-        <p>{item.text}</p>
-        <button
-          className="deleteBtn"
-          onClick={() => {
-            if (confirm("Usunąc notatke?")) {
-              this.setState({
-                data: this.state.data.filter(check => check !== item)
-              });
-            } else {
-              // Do nothing!
-            }
-          }}
-        >
-          <i class="fas fa-trash-alt" />
-        </button>
-        <span className="date"> {item.date}</span>
-      </li>
-    ));
-    return (
-      <div className="App">
-        <AddNote addNote={this.addNote} />
-        <ul className="list">{listItems}</ul>
-      </div>
-    );
-  }
-}
-
-const rootElement = document.getElementById("root");
-ReactDOM.render(<App />, rootElement);
+import { render } from "react-dom";
+import { Provider } from "react-redux";
+import { createStore } from "redux";
+import notesApp from "./reducer";
+import App from "./App";
+const store = createStore(notesApp);
+render(
+  <Provider store={store}>
+    <App />
+  </Provider>,
+  document.getElementById("root")
+);
