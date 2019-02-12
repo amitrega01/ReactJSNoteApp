@@ -9,6 +9,7 @@ export default function notesApp(state = initialState, action) {
           ...state.notes,
           {
             id: action.id,
+            title: action.title,
             text: action.text,
             date: action.date
           }

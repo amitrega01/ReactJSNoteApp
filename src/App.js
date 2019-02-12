@@ -12,6 +12,7 @@ class App extends React.Component {
     this.props.dispatch({
       type: "ADD_NOTE",
       id: this.props.notes.length,
+      title: value.title ? value.title : "Brak tytułu",
       text: value.text,
       date: value.date
     });
@@ -22,6 +23,7 @@ class App extends React.Component {
   render() {
     const listItems = this.props.notes.map(item => (
       <ListItem
+        title={item.title}
         id={item.id}
         text={item.text}
         date={item.date}

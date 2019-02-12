@@ -6,6 +6,7 @@ export default class ListItem extends React.Component {
   render() {
     return (
       <li className="listItem">
+        <h2 className="title">{this.props.title}</h2>
         <p>{this.props.text}</p>
         <button
           className="deleteBtn"

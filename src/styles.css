@@ -8,7 +8,7 @@
   padding-bottom: 16px;
 }
 .date {
-  font-size: 10px;
+  font-size: 0.8em;
   color: rgba(0, 0, 0, 0.5);
 }
 .form {
@@ -17,11 +17,22 @@
   flex-shrink: initial;
   flex-wrap: wrap;
 }
+.column {
+  display: flex;
+  flex-direction: column;
+  flex: 10;
+}
 .input {
-  flex: 4;
   border: none;
   font-weight: 800;
-  font-size: 24px;
+  font-size: 1.5em;
+  padding: 16px;
+  font-family: "Open Sans";
+}
+
+.inputSmall {
+  border: none;
+  font-size: 1em;
   padding: 16px;
   font-family: "Open Sans";
 }
@@ -66,4 +77,9 @@
   box-shadow: 0px 2px 16px rgba(52, 97, 129, 0.25);
   text-align: left;
   max-width: inherit;
+}
+.title {
+  padding: 0;
+  margin: 0;
+  font-size: 1.2em;
 }
