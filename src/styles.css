@@ -50,6 +50,10 @@
   margin: 8px;
   min-width: 120px;
   font-family: "Open Sans";
+  transition: 0.2s;
+}
+.button:hover {
+  background: #1f3eda;
 }
 .deleteBtn {
   flex: 1;
@@ -62,6 +66,7 @@
   color: red;
   font-weight: 800;
   font-family: "Open Sans";
+  transition: 0.5s;
 }
 .deleteBtn:hover {
   background-color: red;
@@ -81,6 +86,10 @@
   box-shadow: 0px 2px 16px rgba(52, 97, 129, 0.25);
   text-align: left;
   max-width: inherit;
+  transition: 0.2s;
+}
+.listItem:hover {
+  box-shadow: 0px 2px 16px rgba(52, 97, 129, 0.55);
 }
 .title {
   padding: 0;
