@@ -1,6 +1,5 @@
 import React from "react";
-import AddNote from "./AddNote";
-import "./styles.css";
+import "../styles.css";
 
 export default class ListItem extends React.Component {
   render() {

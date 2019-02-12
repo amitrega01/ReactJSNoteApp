@@ -1,6 +1,6 @@
 import React from "react";
-import AddNote from "./AddNote";
-import ListItem from "./ListItem";
+import AddNote from "./components/AddNote";
+import ListItem from "./components/ListItem";
 import { connect } from "react-redux";
 import "./styles.css";
 
