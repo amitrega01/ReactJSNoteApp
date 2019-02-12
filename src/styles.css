@@ -16,6 +16,8 @@
   flex-direction: row;
   flex-shrink: initial;
   flex-wrap: wrap;
+  margin-bottom: 16px;
+  box-shadow: 0 10px 10px rgba(52, 97, 129, 0.25);
 }
 .column {
   display: flex;
@@ -38,7 +40,6 @@
 }
 .button {
   flex: 1;
-  height: 48px;
   align-self: center;
   background: #254aff;
   border-radius: 30px;
@@ -46,22 +47,20 @@
   border: none;
   padding: 8px;
   color: white;
-  font-weight: 800;
-
+  margin: 8px;
   min-width: 120px;
   font-family: "Open Sans";
 }
 .deleteBtn {
   flex: 1;
   float: right;
-  width: 5vh;
-  height: 5vh;
+  width: 4vh;
+  height: 4vh;
   align-self: center;
   background: none;
   border: none;
   color: red;
   font-weight: 800;
-
   font-family: "Open Sans";
 }
 .deleteBtn:hover {
