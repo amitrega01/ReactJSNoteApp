@@ -18,7 +18,9 @@ class App extends React.Component {
     });
   };
   deleteItem = id => {
-    this.props.dispatch({ type: "DELETE_NOTE", id: id });
+    if (confirm("Usunąc notaktę?")) {
+      this.props.dispatch({ type: "DELETE_NOTE", id: id });
+    }
   };
   render() {
     const listItems = this.props.notes.map(item => (

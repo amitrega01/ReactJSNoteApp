@@ -27,10 +27,10 @@ export default class Note extends React.Component {
       };
       this.props.addNote(note);
       this.setState({ text: "", title: "" });
-      event.preventDefault();
     } else {
       alert("Podaj treść notatki");
     }
+    event.preventDefault();
   };
   render() {
     return (
